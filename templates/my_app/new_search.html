@@ -1,13 +1,55 @@
 {% extends 'base.html' %}
 
 {% block content %}
+<h2 style="text-align: center;">{{ search | title }}</h2>
 
-<form action="{% url 'new_search' %}" method="POST">
-    {% csrf_token %}
-    <input type="text" name="search" placeholder="search here ...">
-    <button class="btn waves-effect waves-light" type="submit" name="action">
-        Search
-        <i class="material-icons right">flash_on</i>
-    </button>
-</form>
+<div class="row">
+    <div class="col s4">
+        <div class="card">
+            <div class="card-image">
+                <a href="/"><img
+                        src="https://images.unsplash.com/photo-1543699565-003b8adda5fc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt=""></a>
+            </div>
+            <div class="card-content">
+                <p>Test</p>
+            </div>
+            <div class="card-action">
+                <a href="/">View listing: Price $100</a>
+            </div>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="card">
+            <div class="card-image">
+                <a href="/"><img
+                        src="https://images.unsplash.com/photo-1430276084627-789fe55a6da0?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt=""></a>
+            </div>
+            <div class="card-content">
+                <p>Test</p>
+            </div>
+            <div class="card-action">
+                <a href="/">View listing: Price $100</a>
+            </div>
+        </div>
+    </div>
+    <div class="col s4">
+        <div class="card">
+            <div class="card-image">
+                <a href="/"><img
+                        src="https://images.unsplash.com/photo-1553484771-0a615f264d58?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60"
+                        alt=""></a>
+            </div>
+            <div class="card-content">
+                <p>Test</p>
+            </div>
+            <div class="card-action">
+                <a href="/">View listing: Price $100</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 {% endblock %}
